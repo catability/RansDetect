@@ -1,0 +1,18 @@
+### ransomwareDetector.py 실행 ### (현재 코드는 C:\test\디렉터리를 탐지합니다.)
+
+# 사전 설정 불필요
+test 디렉터리가 없으면 생성하여 탐지를 시작합니다.
+C:\ini\detection_time.ini 와 C:\ini\cnt.ini 파일도 없으면 생성합니다.
+
+
+### createFiles.py 실행 ###
+
+C:\test 디렉터리를 확인하여
+우선 존재하는 파일 및 디렉터리들을 모두 지우고 (deleted 탐지)
+test1~10.txt 텍스트 파일을 생성 및 쓰기 합니다. (created, modified 탐지)
+
+
+### changeFiles.py ###
+
+탐색한 파일의 내용을 변경하고 (modified 탐지)
+파일의 확장자를 변경합니다. (moved만 탐지 될 때도, modified, moved 탐지 될 때도,,, 뭐 땜에 달라지지)
